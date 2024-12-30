@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"No tests specified\" && exit 0",
-    "build": "node server.js"
+    "build": "npm run copy-files",
+    "copy-files": "cp -r src/* public/ && cp -r styles/* public/"
   },
   "dependencies": {
     "core-js": "^3.39.0",
